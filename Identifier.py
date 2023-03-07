@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-""" generated source for module Identifier """
-
 # package: identifier
 class Identifier(object):
     """ generated source for class Identifier """
@@ -28,7 +25,7 @@ class Identifier(object):
         if len(s) > 1:
             achar = s[1]
             i = 1
-            while i < len(s) - 1:
+            while i < (len(s) - 1):
                 achar = s[i]
                 if not self.valid_f(achar):
                     valid_id = False
