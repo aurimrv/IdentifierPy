@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+""" generated source for module Identifier """
+
 # package: identifier
 class Identifier(object):
     """ generated source for class Identifier """
@@ -20,16 +23,17 @@ class Identifier(object):
         """ generated source for method validateIdentifier """
         achar = str()
         valid_id = False
-        achar = s[0]
-        valid_id = self.valid_s(achar)
-        if len(s) > 1:
-            achar = s[1]
-            i = 1
-            while i < (len(s) - 1):
-                achar = s[i]
-                if not self.valid_f(achar):
-                    valid_id = False
-                i += 1
+        if (s != None and len(s) > 0):
+            achar = s[0]
+            valid_id = self.valid_s(achar)
+            if len(s) > 1:
+                achar = s[1]
+                i = 1
+                while (i < (len(s) - 1)):
+                    achar = s[i]
+                    if not self.valid_f(achar):
+                        valid_id = False
+                    i += 1 # comment to generate an infinite looping
         if valid_id and (len(s) >= 1) and (len(s) < 6):
             return True
         else:

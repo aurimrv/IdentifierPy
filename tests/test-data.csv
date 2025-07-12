@@ -1,0 +1,10 @@
+input,output
+abc, True
+123, False
+"", False
+A1b2C3d, False
+2B3, False
+Z#12, False
+xyz, True
+12345, False
+kkk, True

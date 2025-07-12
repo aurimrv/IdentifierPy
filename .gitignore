@@ -1,1 +1,6 @@
-__pycache__ report venv
+__pycache__ 
+report 
+venv
+.pytest_cache
+.vscode
+build

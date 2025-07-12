@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+""" generated source for module IdentifierMain """
 # package: identifier
 from Identifier import Identifier
 
