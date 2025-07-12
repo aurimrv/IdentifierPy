@@ -51,10 +51,23 @@ pyinstaller --onefile src/IdentifierMain.py
 ## Measuring Coverage
 
 ```bash
-coverage run --source=Identifier -m pytest tests
+coverage run --source=src.Identifier -m pytest tests
+coverage run --source=src.Identifier --branch -m pytest tests
 coverage report
 coverage html -d coverage
-coverage run --source=Identifier --branch -m pytest tests
+```
+
+It is also possible to configure a `.coveragerc` file
+
+```
+[run]
+source = src
+branch = True
+omit = */tests/*
+```
+
+```bash
+coverage run --omit='*/tests/*' --branch -m pytest
 ```
 
 ## Coverage in GitHub Actions
