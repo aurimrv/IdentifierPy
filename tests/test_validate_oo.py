@@ -1,4 +1,4 @@
-from Identifier import Identifier
+from src.Identifier import Identifier
 import pytest
 class TestValidateIdentifier:
     _TIMEOUT=0.5 # 500 milliseconds

@@ -78,3 +78,11 @@ coverage run --source=Identifier --branch -m pytest tests
           override_commit: ${{ github.event.pull_request.head.sha }}
           override_branch: ${{ github.event.pull_request.head.ref }}
 ```
+
+# Run Mutation Tool
+
+Berofe run this tool, make sure to install `requirements.txt` dependencies.
+
+```bash
+mut.py -t src/Identifier.py -u tests/test_validate.py --runner pytest --report-html mutpy
+```

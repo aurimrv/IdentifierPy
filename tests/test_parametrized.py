@@ -1,6 +1,6 @@
 import pytest
 import csv
-from Identifier import Identifier
+from src.Identifier import Identifier
 
 def load_csv_data():
     with open("tests/test-data.csv", newline='') as csvfile:
